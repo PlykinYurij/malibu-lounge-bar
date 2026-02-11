@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+const withLinary = require('next-with-linaria');
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  i18n: {
+    locales: ['ru', 'en'],
+    defaultLocale: 'ru',
+    localeDetection: false,
+  }
 };
 
-export default nextConfig;
+module.exports = withLinary(nextConfig);

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# WyW-in-JS generated files
+*.wyw-in-js.module.css
+*.wyw-in-js.ts
+**/*.wyw-in-js.module.css

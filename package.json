@@ -6,21 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "types": "npx tsc"
   },
   "dependencies": {
+    "i18next": "^25.8.4",
+    "i18next-browser-languagedetector": "^8.2.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-i18next": "^16.5.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@linaria/babel-preset": "^5.0.4",
+    "@linaria/core": "^7.0.0",
+    "@linaria/react": "^7.0.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@wyw-in-js/nextjs": "^1.0.7",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "next-with-linaria": "^1.3.0",
     "tailwindcss": "^4",
+    "ts-loader": "^9.5.4",
     "typescript": "^5"
   }
 }

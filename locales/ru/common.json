@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "about": "О нас",
+    "menu": "Меню",
+    "rules": "Правила",
+    "contacts": "Контакты"
+  },
+  "hero": {
+    "title": "Malibu Lounge Bar",
+    "subtitle": "Кальян • Бар • Ночная атмосфера"
+  },
+  "sections": {
+    "about": {
+      "title": "О нас",
+      "description": "Malibu Lounge Bar — пространство для отдыха, вкуса и ночного настроения."
+    },
+    "menu": {
+      "title": "Меню"
+    },
+    "rules": {
+      "title": "Правила",
+      "rule1": "18+",
+      "rule2": "Уважение к гостям и персоналу",
+      "rule3": "Бронирование приветствуется"
+    },
+    "contacts": {
+      "title": "Контакты",
+      "address": "📍 Адрес",
+      "phone": "📞 Телефон",
+      "social": "📸 Instagram / Telegram"
+    }
+  },
+  "menuCategories": {
+    "hookah": "🔥 Hookah Mixes",
+    "drinks": "🍹 Signature Drinks",
+    "food": "🍔 Tasty Bites"
+  },
+  "footer": {
+    "copyright": "© Malibu Lounge Bar"
+  },
+  "search": {
+    "placeholder": "Поиск по меню..."
+  }
+}

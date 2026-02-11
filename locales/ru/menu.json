@@ -1,0 +1,53 @@
+{
+  "hookah": {
+    "classicMix": {
+      "name": "Classic Mix",
+      "description": "Лёгкий микс яблока и мяты",
+      "price": "1500 ₽"
+    },
+    "berryBoom": {
+      "name": "Berry Boom",
+      "description": "Яркий ягодный микс с холодком",
+      "price": "1700 ₽"
+    },
+    "citrusEnergy": {
+      "name": "Citrus Energy",
+      "description": "Грейпфрут, апельсин и лайм",
+      "price": "1800 ₽"
+    }
+  },
+  "drinks": {
+    "mojito": {
+      "name": "Мохито",
+      "description": "Лайм, мята, газированная вода",
+      "price": "450 ₽"
+    },
+    "lemonade": {
+      "name": "Авторский лимонад",
+      "description": "Манго и маракуйя",
+      "price": "400 ₽"
+    },
+    "tea": {
+      "name": "Чай в чайнике",
+      "description": "Ассам / Эрл Грей / Жасмин",
+      "price": "500 ₽"
+    }
+  },
+  "food": {
+    "fries": {
+      "name": "Картофель фри",
+      "description": "Подаётся с соусом на выбор",
+      "price": "350 ₽"
+    },
+    "wings": {
+      "name": "Куриные крылья BBQ",
+      "description": "Острые или классические",
+      "price": "550 ₽"
+    },
+    "cheese": {
+      "name": "Сырная тарелка",
+      "description": "Ассорти сыров с орехами и мёдом",
+      "price": "750 ₽"
+    }
+  }
+}
