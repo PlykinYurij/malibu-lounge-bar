@@ -4,7 +4,7 @@ import {Flex} from "../Flex";
 import {MenuItemWrapper} from './MenuItem.styles'
 import {Text} from "@ui";
 
-export const MenuItem: FC<FoodItem> = ({name, variants, kind, description, ingredients}) => {
+export const MenuItem: FC<Omit<FoodItem, 'category'>> = ({name, variants, kind, description, ingredients}) => {
     return <MenuItemWrapper>
         <Flex direction={"column"} gap={'xs'}>
             <Text size="md">{name}</Text>
