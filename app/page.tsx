@@ -1,9 +1,8 @@
 'use client';
 
 import { SearchProvider } from '../contexts/SearchContext';
-import {Hero, Navigation, About, Menu} from '@ux';
+import {Hero, Navigation, About, Menu, VipZone, Rules, Contacts} from '@ux';
 import { Section } from '@ui';
-import menu from '@data/menu.json'
 import '../styles/globals.css';
 import { useTranslation } from 'react-i18next';
 
@@ -20,22 +19,13 @@ export default function Home() {
 
           <About />
           <Section id="menu" title={t('sections:menu.title')}>
-              <Menu menuData={menu}/>
+              <Menu />
           </Section>
 
-          <Section id="rules" title={t('sections.rules.title')}>
-            <ul>
-              <li>{t('sections.rules.rule1')}</li>
-              <li>{t('sections.rules.rule2')}</li>
-              <li>{t('sections.rules.rule3')}</li>
-            </ul>
-          </Section>
+          <VipZone />
+          <Rules />
 
-          <Section id="contacts" title={t('sections.contacts.title')}>
-            <p>{t('sections.contacts.address')}</p>
-            <p>{t('sections.contacts.phone')}</p>
-            <p>{t('sections.contacts.social')}</p>
-          </Section>
+          <Contacts />
         </main>
         <footer className="container">
           <small>{t('footer.copyright')}</small>

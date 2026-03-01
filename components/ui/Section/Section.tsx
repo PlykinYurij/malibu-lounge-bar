@@ -12,7 +12,7 @@ export const Section = ({ id, title, children, ...rest }: SectionProps & React.C
 
   return (
     <SectionStyled id={id} {...rest}>
-      <Text size='3xl' color='secondary' >{title}</Text>
+      <Text textAlight={"center"} size='3xl' color='secondary' >{title}</Text>
       {children}
     </SectionStyled>
   );

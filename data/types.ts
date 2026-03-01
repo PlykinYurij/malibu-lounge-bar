@@ -4,7 +4,7 @@ export type VariantItem = {
     price: number
 }
 
-export type Categories = 'desserts' | 'tea' | 'coffee' | 'drinks' | 'snacks' | 'hookahs' | 'pastes' | 'burgers' | 'sauces'
+export type Categories = 'desserts' | 'tea' | 'coffee' | 'drinks' | 'snacks' | 'hookahs' | 'pastes' | 'burgers' | 'sauces' | 'alcohol'
 
 export type FoodItem = {
     id: string;
@@ -12,5 +12,6 @@ export type FoodItem = {
     category: Categories
     variants: VariantItem[]
     description?: string;
-    ingredients?: string[];
+    ingredients?: string;
+    kind?: string[]
 }
