@@ -1,4 +1,5 @@
 import { styled } from '@linaria/react';
+import { StyledTextProps } from './types';
 
 // Маппинг размеров текста
 const sizeStyles = {
@@ -24,8 +25,8 @@ const weightStyles = {
 // Маппинг цветов текста
 const colorStyles = {
   primary: 'var(--text-main)',
-  secondary: '#c7cbda', // соответствует --text-muted
-  muted: 'rgba(199, 203, 218, 0.6)', // более приглушенный вариант
+  secondary: '#c7cbda',
+  muted: 'rgba(199, 203, 218, 0.6)',
   accent: 'var(--section-title)',
   'neon-pink': 'var(--neon-pink)',
   'neon-blue': 'var(--neon-blue)',
@@ -33,19 +34,12 @@ const colorStyles = {
   black: '#000000',
 };
 
-// Тип для styled-компонента с долларовыми префиксами
-type StyledTextProps = {
-  $size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl';
-  $bold?: 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold';
-  $italic?: boolean;
-  $color?: 'primary' | 'secondary' | 'muted' | 'accent' | 'neon-pink' | 'neon-blue' | 'white' | 'black';
-};
-
 export const StyledText = styled.p<StyledTextProps>`
   font-size: ${({ $size = 'md' }) => sizeStyles[$size!]};
   font-weight: ${({ $bold = 'normal' }) => weightStyles[$bold!]};
   font-style: ${({ $italic = false }) => $italic ? 'italic' : 'normal'};
   color: ${({ $color = 'primary' }) => colorStyles[$color!]};
+  white-space: pre-line;
   margin: 0;
   padding: 0;
 `;

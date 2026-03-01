@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "types": "npx tsc"
+    "types": "npx tsc",
+    "convert-menu": "node scripts/convert-menu.js"
   },
   "dependencies": {
     "i18next": "^25.8.4",
@@ -29,7 +30,9 @@
     "eslint-config-next": "16.1.6",
     "next-with-linaria": "^1.3.0",
     "tailwindcss": "^4",
+    "transliteration": "^2.6.1",
     "ts-loader": "^9.5.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "xlsx": "^0.18.5"
   }
 }

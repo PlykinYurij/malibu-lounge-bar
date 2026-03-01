@@ -1,13 +1,6 @@
 import React from 'react';
 import { StyledFlex } from './Flex.styles';
-
-interface FlexOwnProps {
-  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
-  justifyContent?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-  alignItems?: 'stretch' | 'flex-start' | 'flex-end' | 'center' | 'baseline';
-  gap?: string;
-  wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
-}
+import {FlexOwnProps} from './types'
 
 export type FlexProps = FlexOwnProps & React.ComponentProps<'div'>;
 

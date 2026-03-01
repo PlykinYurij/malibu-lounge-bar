@@ -6,10 +6,9 @@ interface SectionProps {
   id: string;
   title: string;
   children: React.ReactNode;
-  showSearch?: boolean;
 }
 
-export const Section = ({ id, title, children, showSearch = false, ...rest }: SectionProps & React.ComponentProps<'section'>) => {
+export const Section = ({ id, title, children, ...rest }: SectionProps & React.ComponentProps<'section'>) => {
 
   return (
     <SectionStyled id={id} {...rest}>
