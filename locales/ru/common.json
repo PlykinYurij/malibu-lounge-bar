@@ -17,6 +17,10 @@
     "menu": {
       "title": "Меню"
     },
+    "vipZone": {
+      "title": "VIP LOUNGE",
+      "description": "Для наилучшего отдыха у нас доступны VIP комнаты:"
+    },
     "rules": {
       "title": "Правила",
       "rule1": "18+",
@@ -25,8 +29,8 @@
     },
     "contacts": {
       "title": "Контакты",
-      "address": "📍 Адрес",
-      "phone": "📞 Телефон",
+      "address": "📍 Адрес: г.Тольятти Южное шоссе 23",
+      "phone": "📞 Телефон: 8-927-751-66-18",
       "social": "📸 Instagram / Telegram"
     }
   },
@@ -40,5 +44,17 @@
   },
   "search": {
     "placeholder": "Поиск по меню..."
+  },
+  "categories": {
+    "desserts": "Дессерты",
+    "tea": "Фирменный чай",
+    "coffee": "Кофейная карта",
+    "drinks": "Барная карта",
+    "snacks": "Закуски",
+    "hookahs": "Кальяны",
+    "pastes": "Паста",
+    "burgers": "Бургеры",
+    "sauces": "Соусы",
+    "alcohol": "Алкоголь"
   }
 }

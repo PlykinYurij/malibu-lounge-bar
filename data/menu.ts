@@ -191,7 +191,7 @@ export const MENU: FoodItem[] = [
         name: 'Фисташки',
         category: 'snacks',
         variants: [
-            {volume: '50', unit: 'гр.', price: 100}
+            {volume: '50', unit: 'гр', price: 100}
         ]
     },
     {
@@ -292,6 +292,18 @@ export const MENU: FoodItem[] = [
     },
     /** */
 
+    /** Соусы*/
+    {
+        id: '1',
+        name: 'Соусы',
+        category: 'sauces',
+        variants: [
+            {price: 50}
+        ],
+        kind: ['сырный', "кисло-сладкий", "барбекю", "терияки", "чесночный", "кетчуп"]
+    },
+
+
     /** Дессерты*/
     {
         id: '1',
@@ -351,5 +363,201 @@ export const MENU: FoodItem[] = [
     },
     /** */
 
+    /** Tea */
+    {
+        id: '1',
+        name: 'Клюквенно-ванильный',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Черный чай, клюква пюре, сироп ваниль'
+    },
+    {
+        id: '2',
+        name: 'Тропический',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Зеленый чай, апельсин, мята, сироп маракуйя',
+    },
+    {
+        id: '3',
+        name: 'Сливовый',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Черный чай, слива пюре, сахарный сироп',
+    },
+    {
+        id: '4',
+        name: 'Цитрусовый микс',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Чай на выбор, апельсин, лимон, грейпфрут',
+    },
+    {
+        id: '5',
+        name: 'Облепиховый',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Чай на выбор, облепиха пюре, лимон, мята мед',
+    },
+    {
+        id: '6',
+        name: 'Имбирный',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Чай на выбор, имбирь пюре, лимон, мята мед',
+    },
+    {
+        id: '7',
+        name: 'Ягодный',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Чай на выбор, малина, вишня, черная смородина, листья смородины',
+    },
+    {
+        id: '8',
+        name: 'Массала',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Черный чай, молоко, черный перец, кардамон, корица, имбирь, мускатный орех, гвоздика, бадьян',
+    },
+    {
+        id: '9',
+        name: 'Сакура',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Черный чай, лепистки роз, клубника',
+    },
+    {
+        id: '10',
+        name: 'Мароканский',
+        category: 'tea',
+        variants: [
+            {volume: '0.6', unit: 'л', price: 400}
+        ],
+        ingredients: 'Зеленый чай, мята, лайм, бадьян, корица, гвоздика',
+    },
 
+    /** Кофе*/
+    {
+        id: '1',
+        name: 'Эспрессо',
+        category: 'coffee',
+        variants: [
+            {price: 150}
+        ]
+    },
+    {
+        id: '2',
+        name: 'Американо',
+        category: 'coffee',
+        variants: [
+            {price: 150}
+        ]
+    },
+    {
+        id: '3',
+        name: 'Капучино',
+        category: 'coffee',
+        variants: [
+            {price: 180}
+        ]
+    },
+    {
+        id: '4',
+        name: 'Латте',
+        category: 'coffee',
+        variants: [
+            {price: 300}
+        ]
+    },
+    {
+        id: '5',
+        name: 'Раф классический',
+        category: 'coffee',
+        variants: [
+            {price: 320}
+        ]
+    },
+    {
+        id: '6',
+        name: 'Бамбл карамельный',
+        category: 'coffee',
+        variants: [
+            {price: 280}
+        ]
+    },
+
+    /** Барная карта*/
+    {
+        id: '1',
+        name: 'Фреши',
+        category: 'drinks',
+        variants: [
+            {volume: '300', unit: 'мл', price: 300}
+        ],
+        description: "Мы обещаем, что будем с ними понежнее",
+        kind: ['Апельсиновый', 'Грейпфрутовый'],
+    },
+    {
+        id: '2',
+        name: 'Смузи',
+        category: 'drinks',
+        variants: [
+            {volume: '300', unit: 'мл', price: 290}
+        ],
+        description: "А, ты из этих? Да, без добавления сиропов",
+        kind: ['Банан, клубника', 'Яблоко, киви', "Малина, персик"],
+    },
+    {
+        id: '3',
+        name: 'Лимонады б/а',
+        category: 'drinks',
+        variants: [
+            {volume: '400', unit: 'мл', price: 250}
+        ],
+        description: "Лимонады отличаются от коктейлей. Чем? Спроси у официанта",
+        kind: ['Тропики', 'Грейпфрут, малина', "Киви, яблоко", "Лаванда, черная смородига"],
+    },
+    {
+        id: '4',
+        name: 'Коктейли б/а',
+        category: 'drinks',
+        variants: [
+            {volume: '400', unit: 'мл', price: 310}
+        ],
+        description: "Без алкоголя, не прячем, под баром нет, по тихой не нальем",
+        kind: ['Мохито', 'Пина колада', "Санрайз"],
+    },
+
+    /** Акоголь*/
+    {
+        id: '1',
+        name: 'Наличие и цены уточняйте у официанта',
+        category: "alcohol",
+        variants: []
+    }
+]
+
+export const VIP_ZONE: Pick<FoodItem, 'id' | 'name' | 'variants'>[] = [
+    {id: '1', name: 'Игровая зона', variants: [{price: 150}]},
+    {id: '2', name: 'Vip комната - половина', variants: [{price: 350}]},
+    {id: '3', name: 'Vip комната - целая', variants: [{price: 700}]}
 ]

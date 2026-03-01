@@ -1,5 +1,5 @@
 import { styled } from '@linaria/react';
-import { StyledTextProps } from './types';
+import { TextProps } from './types';
 
 // Маппинг размеров текста
 const sizeStyles = {
@@ -34,11 +34,12 @@ const colorStyles = {
   black: '#000000',
 };
 
-export const StyledText = styled.p<StyledTextProps>`
-  font-size: ${({ $size = 'md' }) => sizeStyles[$size!]};
-  font-weight: ${({ $bold = 'normal' }) => weightStyles[$bold!]};
-  font-style: ${({ $italic = false }) => $italic ? 'italic' : 'normal'};
-  color: ${({ $color = 'primary' }) => colorStyles[$color!]};
+export const StyledText = styled.p<TextProps>`
+  font-size: ${({ size = 'md' }) => sizeStyles[size!]};
+  font-weight: ${({ bold = 'normal' }) => weightStyles[bold!]};
+  font-style: ${({ italic = false }) => italic ? 'italic' : 'normal'};
+  color: ${({ color = 'primary' }) => colorStyles[color!]};
+  text-align: ${({ textAlight = 'start' }) => textAlight};
   white-space: pre-line;
   margin: 0;
   padding: 0;
