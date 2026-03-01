@@ -7,8 +7,8 @@ export const HeroContainer = styled.header`
   justify-content: center;
   text-align: center;
   background:
-          linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.9)),
-          url("/background.jpg") center/cover no-repeat;
+          linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.45)),
+          url("/photo-4.jpg") center/cover no-repeat;
 `;
 
 export const HeroContent = styled.main`

@@ -10,7 +10,7 @@ export const About = () => {
 
   return (
     <Section id="about" title={t('sections:about.title')} className={AboutSection}>
-      <Text textAlight={'center'}>{t('sections:about.description')}</Text>
+      <Text textAlight={'center'} fontFamily={"description"}>{t('sections:about.description')}</Text>
       <PhotoGrid>
         {photos.map((photo, index) => (
           <PhotoCard key={index}>
