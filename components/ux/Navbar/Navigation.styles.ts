@@ -3,7 +3,9 @@ import { styled } from '@linaria/react';
 export const StyledNav = styled.nav`
   position: sticky;
   top: 0;
+    opacity: 0.8;
   z-index: 100;
+    height: 56px;
   background: var(--bg);
   display: flex;
   justify-content: space-between;

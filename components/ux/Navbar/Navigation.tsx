@@ -47,6 +47,7 @@ export const Navigation = () => {
         <span></span>
       </NavToggle>
       <NavLinks isActive={isMenuOpen} id="navLinks">
+        <Text size={'m'} bold={'medium'}>8-927-751-66-18</Text>
         <NavButton onClick={() => scrollToSection('about')}>{t('navbar:about')}</NavButton>
         <NavButton onClick={() => scrollToSection('menu')}>{t('navbar:menu')}</NavButton>
         <NavButton onClick={() => scrollToSection('rules')}>{t('navbar:rules')}</NavButton>

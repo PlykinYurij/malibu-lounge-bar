@@ -70,7 +70,7 @@ export const Menu: FC = () => {
 
       {Object.entries(preparedMenu).map(([category, menuItems]) => (
         <div key={category}>
-          <Flex justifyContent='center'>
+          <Flex justifyContent='center' style={{marginBottom: 'var(--spacing-m)'}}>
             <Text size="xl" color="muted">{t(`categories:${category}`)}</Text>
           </Flex>
 

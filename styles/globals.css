@@ -1,5 +1,5 @@
 :root {
-  --bg: #0b0d12;
+  --bg: #1f1c1c;
   --card: #15192a;
   --text-main: #edefff;
   --text-muted: #c7cbda;
@@ -19,10 +19,26 @@
   --spacing-xxxxl: clamp(32px, 8vw, 64px);
 }
 
+@font-face {
+  font-family: 'MalibuFontMain';
+  src: url('/fonts/malibu-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MalibuFontDescription';
+  src: url('/fonts/malibu-description.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background: var(--bg);
   color: var(--text-main);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'MalibuFontMain';
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin: 0;
