@@ -44,3 +44,6 @@ next-env.d.ts
 *.wyw-in-js.module.css
 *.wyw-in-js.ts
 **/*.wyw-in-js.module.css
+
+# Catalog files
+data/catalog.xlsx

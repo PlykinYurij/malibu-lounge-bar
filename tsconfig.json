@@ -20,12 +20,13 @@
     ],
     "paths": {
       "@hooks/*": ["./lib/hooks/*"],
-      "@consts/*": ["./lib/consts/*"],
+      "@consts": ["./lib/consts"],
       "@utils/*": ["./lib/utils/*"],
       "@ux/*": ["./components/ux/*"],
       "@ux": ["./components/ux"],
       "@ui/*": ["./components/ui/*"],
-      "@ui": ["./components/ui"]
+      "@ui": ["./components/ui"],
+      "@data/*": ["./data/*"],
     }
   },
   "include": [
