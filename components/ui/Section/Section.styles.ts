@@ -8,3 +8,14 @@ export const SectionStyled = styled.section`
     max-width: 1200px;
     margin: 0 auto;
 `
+
+export const SectionContainerContent = styled.aside`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--spacing-xl);
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+`

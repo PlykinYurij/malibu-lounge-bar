@@ -7,6 +7,12 @@
   --neon-blue: #3fdfff;
   --section-title: #ff80bf;
 
+
+  /* Contact card */
+  --card-border-color-default: #c7cbda;
+  --card-border-radius: 5px;
+
+
   /* Spacing scale for responsive design */
   --spacing-xxs: clamp(1px, 0.5vw, 2px);
   --spacing-xs: clamp(2px, 1vw, 4px);

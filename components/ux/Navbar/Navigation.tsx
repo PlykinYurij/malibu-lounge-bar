@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { Text, Flex } from '@ui';
+import React, { useState } from 'react';
+import {Text, Flex, Link} from '@ui';
 import { 
   StyledNav, 
   NavLinks, 
@@ -20,12 +20,10 @@ export const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Функция для плавного скролла к секции
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      // Закрыть мобильное меню после клика
       if (isMenuOpen) {
         setIsMenuOpen(false);
       }
@@ -47,7 +45,11 @@ export const Navigation = () => {
         <span></span>
       </NavToggle>
       <NavLinks isActive={isMenuOpen} id="navLinks">
-        <Text bold={'medium'}>8-927-751-66-18</Text>
+        <Link href={'tel:+79277516618'} target={"_blank"}>
+          <Text textAlight={"center"} >
+            {t('sections:contacts.phone')}
+          </Text>
+        </Link>
         <NavButton onClick={() => scrollToSection('about')}>{t('navbar:about')}</NavButton>
         <NavButton onClick={() => scrollToSection('menu')}>{t('navbar:menu')}</NavButton>
         <NavButton onClick={() => scrollToSection('rules')}>{t('navbar:rules')}</NavButton>

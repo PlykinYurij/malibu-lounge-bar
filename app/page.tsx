@@ -3,7 +3,6 @@
 import { SearchProvider } from '../contexts/SearchContext';
 import {Hero, Navigation, About, Menu, VipZone, Rules, Contacts} from '@ux';
 import { Section } from '@ui';
-import '../styles/globals.css';
 import { useTranslation } from 'react-i18next';
 
 export default function Home() {
