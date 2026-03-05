@@ -338,14 +338,6 @@ export const MENU: FoodItem[] = [
         ]
     },
     {
-        id: '5',
-        name: 'Торт рикота с грушей',
-        category: 'desserts',
-        variants: [
-            {price: 210}
-        ]
-    },
-    {
         id: '6',
         name: 'Торт малина фисташка',
         category: 'desserts',
@@ -369,7 +361,7 @@ export const MENU: FoodItem[] = [
         name: 'Клюквенно-ванильный',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Черный чай, клюква пюре, сироп ваниль'
     },
@@ -378,7 +370,7 @@ export const MENU: FoodItem[] = [
         name: 'Тропический',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Зеленый чай, апельсин, мята, сироп маракуйя',
     },
@@ -387,7 +379,7 @@ export const MENU: FoodItem[] = [
         name: 'Сливовый',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Черный чай, слива пюре, сахарный сироп',
     },
@@ -396,7 +388,7 @@ export const MENU: FoodItem[] = [
         name: 'Цитрусовый микс',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Чай на выбор, апельсин, лимон, грейпфрут',
     },
@@ -405,7 +397,7 @@ export const MENU: FoodItem[] = [
         name: 'Облепиховый',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Чай на выбор, облепиха пюре, лимон, мята мед',
     },
@@ -414,7 +406,7 @@ export const MENU: FoodItem[] = [
         name: 'Имбирный',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Чай на выбор, имбирь пюре, лимон, мята мед',
     },
@@ -423,7 +415,7 @@ export const MENU: FoodItem[] = [
         name: 'Ягодный',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Чай на выбор, малина, вишня, черная смородина, листья смородины',
     },
@@ -432,7 +424,7 @@ export const MENU: FoodItem[] = [
         name: 'Массала',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Черный чай, молоко, черный перец, кардамон, корица, имбирь, мускатный орех, гвоздика, бадьян',
     },
@@ -441,7 +433,7 @@ export const MENU: FoodItem[] = [
         name: 'Сакура',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Черный чай, лепистки роз, клубника',
     },
@@ -450,7 +442,7 @@ export const MENU: FoodItem[] = [
         name: 'Мароканский',
         category: 'tea',
         variants: [
-            {volume: '0.6', unit: 'л', price: 400}
+            {volume: '0.9', unit: 'л', price: 400}
         ],
         ingredients: 'Зеленый чай, мята, лайм, бадьян, корица, гвоздика',
     },
@@ -544,7 +536,7 @@ export const MENU: FoodItem[] = [
             {volume: '400', unit: 'мл', price: 310}
         ],
         description: "Без алкоголя, не прячем, под баром нет, по тихой не нальем",
-        kind: ['Мохито', 'Пина колада', "Санрайз"],
+        kind: ['Мохито (Classic, Orange, Strawberry)', 'Пина колада', "Санрайз"],
     },
 
     /** Акоголь*/
@@ -560,4 +552,10 @@ export const VIP_ZONE: Pick<FoodItem, 'id' | 'name' | 'variants'>[] = [
     {id: '1', name: 'Игровая зона', variants: [{price: 150}]},
     {id: '2', name: 'Vip комната - половина', variants: [{price: 350}]},
     {id: '3', name: 'Vip комната - целая', variants: [{price: 700}]}
+]
+
+export const OPENING_HOURS: {day: string, time: string}[] = [
+    {day: 'Пн - Чт', time: "17:00-01:00"},
+    {day: 'Пятница', time: "17:00-03:00"},
+    {day: 'Сб - Вс', time: "17:00-01:00"},
 ]

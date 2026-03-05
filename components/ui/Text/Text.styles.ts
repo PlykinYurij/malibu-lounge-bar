@@ -47,6 +47,5 @@ export const StyledText = styled.p<TextProps>`
   text-align: ${({ textAlight = 'start' }) => textAlight};
   font-family: ${({fontFamily = 'main'}) => textFontFamily[fontFamily]};
   white-space: pre-line;
-  margin: 0;
   padding: 0;
 `;

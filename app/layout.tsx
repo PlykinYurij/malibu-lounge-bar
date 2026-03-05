@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Providers } from "./Providers";
+import '../styles/globals.css';
+import '../styles/reset.css';
 
 export const metadata: Metadata = {
   title: "Malibu lounge bar",

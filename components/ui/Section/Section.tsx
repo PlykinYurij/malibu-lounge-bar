@@ -5,7 +5,7 @@ import {ReactNode} from "react";
 
 interface SectionProps {
   id: string;
-  title: string;
+  title?: string;
   children: ReactNode;
 }
 
@@ -13,7 +13,7 @@ export const Section = ({ id, title, children, ...rest }: SectionProps & React.C
 
   return (
     <SectionStyled id={id} {...rest}>
-      <Text textAlight={"center"} size='3xl' bold={'semibold'} color='neon-pink' >{title.toUpperCase()}</Text>
+      {title && <Text textAlight={"center"} size='3xl' bold={'semibold'} color='neon-pink' >{title.toUpperCase()}</Text>}
       {children}
     </SectionStyled>
   );
