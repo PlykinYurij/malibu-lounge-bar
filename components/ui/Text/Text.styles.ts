@@ -2,7 +2,7 @@ import { styled } from '@linaria/react';
 import {TextFontFamily, TextProps} from './types';
 
 // Маппинг размеров текста
-const sizeStyles = {
+export const sizeStylesText = {
   xs: 'clamp(0.75rem, 0.8vw, 0.8rem)',
   sm: 'clamp(0.875rem, 1vw, 0.9rem)',
   md: 'clamp(1rem, 1.2vw, 1rem)',
@@ -14,7 +14,7 @@ const sizeStyles = {
 };
 
 // Маппинг жирности текста
-const weightStyles = {
+export const weightStylesText = {
   normal: 400,
   medium: 500,
   semibold: 600,
@@ -23,7 +23,7 @@ const weightStyles = {
 };
 
 // Маппинг цветов текста
-const colorStyles = {
+export const colorStylesText = {
   primary: 'var(--text-main)',
   secondary: '#c7cbda',
   muted: 'rgba(199, 203, 218, 0.6)',
@@ -32,20 +32,21 @@ const colorStyles = {
   'neon-blue': 'var(--neon-blue)',
   white: '#ffffff',
   black: '#000000',
+  'lux-red': '#D71C4B',
 };
 
-const textFontFamily: Record<TextFontFamily, string> = {
+export const textFontFamilyText: Record<TextFontFamily, string> = {
   main: 'MalibuFontMain',
   description: 'MalibuFontDescription'
 }
 
 export const StyledText = styled.p<TextProps>`
-  font-size: ${({ size = 'md' }) => sizeStyles[size!]};
-  font-weight: ${({ bold = 'normal' }) => weightStyles[bold!]};
+  font-size: ${({ size = 'md' }) => sizeStylesText[size!]};
+  font-weight: ${({ bold = 'normal' }) => weightStylesText[bold!]};
   font-style: ${({ italic = false }) => italic ? 'italic' : 'normal'};
-  color: ${({ color = 'primary' }) => colorStyles[color!]};
+  color: ${({ color = 'primary' }) => colorStylesText[color!]};
   text-align: ${({ textAlight = 'start' }) => textAlight};
-  font-family: ${({fontFamily = 'main'}) => textFontFamily[fontFamily]};
+  font-family: ${({fontFamily = 'main'}) => textFontFamilyText[fontFamily]};
   white-space: pre-line;
   padding: 0;
 `;

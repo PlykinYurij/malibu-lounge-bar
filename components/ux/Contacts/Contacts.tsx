@@ -1,3 +1,4 @@
+'use client'
 import React, {Fragment} from 'react';
 import {Card, Flex, Link, Section, Text} from "@ui";
 import {useTranslation} from "react-i18next";

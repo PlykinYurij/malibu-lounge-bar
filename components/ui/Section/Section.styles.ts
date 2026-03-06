@@ -16,6 +16,7 @@ export const SectionContainerContent = styled.aside`
     gap: var(--spacing-xl);
 
     @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 `

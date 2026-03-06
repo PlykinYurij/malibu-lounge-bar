@@ -19,7 +19,7 @@
       }
     ],
     "paths": {
-      "@hooks/*": ["./lib/hooks/*"],
+      "@hooks": ["./lib/hooks"],
       "@consts": ["./lib/consts"],
       "@utils/*": ["./lib/utils/*"],
       "@ux/*": ["./components/ux/*"],

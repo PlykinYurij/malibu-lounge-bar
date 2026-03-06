@@ -9,7 +9,7 @@ export const MenuItem: FC<Omit<FoodItem, 'category'>> = ({name, variants, kind, 
         <Flex direction={"column"} gap={'xs'}>
             <Text size="md">{name}</Text>
             {description && <Text italic size={"xs"} color={"secondary"}>{description}</Text>}
-            {kind && <Text size={'sm'} color={'accent'}>{kind.join(' / ')}</Text>}
+            {kind && <Text size={'sm'} color={'lux-red'}>{kind.join(' / ')}</Text>}
             {ingredients && <Text size={'sm'} color={'muted'}>{ingredients}</Text>}
         </Flex>
         <Flex direction={"column"} gap={'xs'} >

@@ -1,7 +1,7 @@
 'use client';
 
 import React, {FC, useMemo, useState} from 'react';
-import {Flex, MenuItem, Tag, Text} from '@ui';
+import {Flex, MenuItem, Section, Tag, Text} from '@ui';
 import { styled } from '@linaria/react';
 import {MENU as menuData} from '@data/menu'
 import {FoodItem} from "@data/types";
@@ -30,12 +30,6 @@ const StyledMenuGrid = styled.div<{count: number}>`
   }
 `;
 
-
-
-
-
-const categories = new Set(menuData.map(({category}) => category))
-
 const preparedMenu = menuData.reduce((acc: Record<string, FoodItem[]>, item) => {
   if (!acc[item.category]) {
     acc[item.category] = []
@@ -49,25 +43,10 @@ const preparedMenu = menuData.reduce((acc: Record<string, FoodItem[]>, item) => 
 
 export const Menu: FC = () => {
   const {t} = useTranslation()
-  const [activeCategoryId, setActiveCategoryId] = useState<string | null>(null)
-
-  //const filteredMenu = activeCategoryId ? menuData.filter(({category}) => activeCategoryId === category) : menuData
 
   return (
+      <Section id="menu" title={t('sections:menu.title')}>
     <Flex direction='column' gap='xl'>
-      {/*<Flex wrap='wrap' gap='xs'>*/}
-      {/*  {menuData.map(({id, category}) => <Tag */}
-      {/*  key={`tag-${id}`} */}
-      {/*  onClick={() => setActiveCategoryId((prev) =>prev === id ? null : id)} */}
-      {/*  isActive={id === activeCategoryId} */}
-      {/*  variant='card'*/}
-      {/*  size='xs'*/}
-      {/*  >*/}
-      {/*    {category}*/}
-
-      {/*  </Tag>)}*/}
-      {/*</Flex>*/}
-
       {Object.entries(preparedMenu).map(([category, menuItems]) => (
         <div key={category}>
           <Flex justifyContent='center' style={{marginBottom: 'var(--spacing-m)'}}>
@@ -82,5 +61,6 @@ export const Menu: FC = () => {
         </div>
       ))}
     </Flex>
+      </Section>
   );
 };
