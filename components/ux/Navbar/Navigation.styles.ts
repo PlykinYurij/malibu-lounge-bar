@@ -1,42 +1,17 @@
 import {styled} from '@linaria/react';
+import {Flex} from "@ui";
 
-export const StyledNav = styled.nav`
-    position: sticky;
+export const StyledNav = styled.nav<{ isOpen: boolean }>`
+    position: fixed;
+    width: 100%;
     top: 0;
-    opacity: 0.8;
+    opacity: ${({isOpen}) => isOpen ? 0.95 : 0.8};
     z-index: 100;
-    height: 56px;
+    min-height: ${({isOpen}) => isOpen ? '100dvh' : '20px'};
     background: var(--bg);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-s) var(--spacing-m);
+    padding: var(--spacing-m) var(--spacing-m);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     transition: all ease 0.3s;
-
-    @media (max-width: 768px) {
-        display: grid;
-        grid-template-columns: auto 1fr;
-    }
-`;
-
-export const NavLinks = styled.div<{ isActive: boolean }>`
-    display: flex;
-    align-items: center;
-
-    @media (max-width: 768px) {
-        grid-column: 1 / span 2;
-        flex-direction: column;
-        justify-items: center;
-        width: 100%;
-        background: var(--bg);
-        padding: ${(props) => (props.isActive ? 'var(--spacing-m) 0' : '0')};
-        max-height: ${(props) => (props.isActive ? '500px' : '0')};
-        opacity: ${(props) => (props.isActive ? '1' : '0')};
-        visibility: ${(props) => (props.isActive ? 'visible' : 'hidden')};
-        overflow: hidden;
-        transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-    }
 `;
 
 export const NavButton = styled.button`
@@ -57,25 +32,8 @@ export const NavButton = styled.button`
 `;
 
 export const NavToggle = styled.div<{ isOpen: boolean }>`
-    display: none;
-    flex-direction: column;
     cursor: pointer;
     transition: all ease 0.3s;
-
-    span {
-        height: 3px;
-        width: 25px;
-        background: var(--text-main);
-        margin: var(--spacing-xxs) 0;
-        border-radius: 2px;
-        transition: all ease 0.3s;
-    }
-
-    @media (max-width: 768px) {
-        display: flex;
-        justify-self: end;
-        transform: rotate(${({isOpen}) => isOpen ? 90 : 0}deg);
-    }
 `;
 
 export const Logo = styled.img`
@@ -85,9 +43,13 @@ export const Logo = styled.img`
     object-fit: contain;
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoContainer = styled.div`
     width: 2rem;
     height: 2rem;
     overflow: hidden;
     border-radius: 30px;
 `;
+
+export const LogoWrapper = styled(Flex)`
+    cursor: pointer;
+`

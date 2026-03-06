@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {PhotoCard, PhotoGrid, PhotoImage, Section, SectionContainerContent, Text} from "@ui";
 import {useTranslation} from "react-i18next";

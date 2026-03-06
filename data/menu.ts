@@ -550,8 +550,8 @@ export const MENU: FoodItem[] = [
 
 export const VIP_ZONE: Pick<FoodItem, 'id' | 'name' | 'variants'>[] = [
     {id: '1', name: 'Игровая зона', variants: [{price: 150}]},
-    {id: '2', name: 'Vip комната - половина', variants: [{price: 350}]},
-    {id: '3', name: 'Vip комната - целая', variants: [{price: 700}]}
+    {id: '2', name: 'VIP комната - половина', variants: [{price: 350}]},
+    {id: '3', name: 'VIP комната - целая', variants: [{price: 700}]}
 ]
 
 export const OPENING_HOURS: {day: string, time: string}[] = [

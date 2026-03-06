@@ -3,6 +3,7 @@ import {styled} from "@linaria/react";
 export const PhotoGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 200px);
     gap: var(--spacing-m);
 
     .horizontal {
@@ -68,7 +69,6 @@ export const PhotoImage = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
     position: relative;
     z-index: 0;
 `;
