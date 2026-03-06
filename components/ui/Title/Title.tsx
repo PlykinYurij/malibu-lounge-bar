@@ -19,7 +19,6 @@ const StyledTitle = styled.h1<TextProps>`
   font-weight: ${({ bold = 'bold' }) => weightStylesText[bold!]};
   font-style: ${({ italic = false }) => (italic ? 'italic' : 'normal')};
   color: ${({ color = 'lux-red' }) => colorStylesText[color!]};
-    text-shadow: -0.2em -0.2em 0.2em rgba(255, 0, 85, 0.5);
   text-align: ${({ textAlight = 'start' }) => textAlight};
   font-family: ${({ fontFamily = 'main' }) => textFontFamilyText[fontFamily]};
   position: relative;
