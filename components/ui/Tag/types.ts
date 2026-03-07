@@ -1,4 +1,4 @@
-import { TextProps } from "../Text";
+import type { TextProps } from '../Text';
 
 // Define tag variant types
 export type TagVariant = 'primary' | 'secondary' | 'accent' | 'muted' | 'card';

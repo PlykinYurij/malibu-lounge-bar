@@ -1,4 +1,4 @@
-import {styled} from '@linaria/react'
+import { styled } from '@linaria/react';
 
 export const SectionStyled = styled.section`
     display: flex;
@@ -7,7 +7,7 @@ export const SectionStyled = styled.section`
     padding: var(--spacing-xxxl) var(--spacing-xl);
     max-width: 1200px;
     margin: 0 auto;
-`
+`;
 
 export const SectionContainerContent = styled.aside`
     display: grid;
@@ -19,4 +19,4 @@ export const SectionContainerContent = styled.aside`
         display: flex;
         flex-direction: column;
     }
-`
+`;

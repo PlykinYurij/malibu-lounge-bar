@@ -1,17 +1,27 @@
 export type VariantItem = {
-    volume?: string;
-    unit?: string;
-    price: number
-}
+  volume?: string;
+  unit?: string;
+  price: number;
+};
 
-export type Categories = 'desserts' | 'tea' | 'coffee' | 'drinks' | 'snacks' | 'hookahs' | 'pastes' | 'burgers' | 'sauces' | 'alcohol'
+export type Categories =
+  | 'desserts'
+  | 'tea'
+  | 'coffee'
+  | 'drinks'
+  | 'snacks'
+  | 'hookahs'
+  | 'pastes'
+  | 'burgers'
+  | 'sauces'
+  | 'alcohol';
 
 export type FoodItem = {
-    id: string;
-    name: string;
-    category: Categories
-    variants: VariantItem[]
-    description?: string;
-    ingredients?: string;
-    kind?: string[]
-}
+  id: string;
+  name: string;
+  category: Categories;
+  variants: VariantItem[];
+  description?: string;
+  ingredients?: string;
+  kind?: string[];
+};

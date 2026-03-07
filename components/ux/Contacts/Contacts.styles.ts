@@ -1,5 +1,5 @@
-import {css} from "@linaria/core";
-import {styled} from "@linaria/react";
+import { css } from '@linaria/core';
+import { styled } from '@linaria/react';
 
 export const ContactSectionStyled = css`
     display: grid;
@@ -9,10 +9,10 @@ export const ContactSectionStyled = css`
         grid-template-columns: 1fr;
         
     }
-`
+`;
 
 export const OpeningHours = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--spacing-xs);
-`
+`;

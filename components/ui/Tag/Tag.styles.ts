@@ -1,36 +1,6 @@
 import { styled } from '@linaria/react';
-import { TagVariant, TagSize, TagBorderRadius, StyledTagProps } from './types';
+import type { StyledTagProps } from './types';
 
-// Define CSS variables for tag colors
-export const tagColors = {
-  // Primary tag colors (more muted version)
-  '--tag-background-primary-default': '#cc3e9e',
-  '--tag-background-primary-active': '#a3327e',
-  '--tag-background-primary-hover': '#e05fb5',
-  
-  // Secondary tag colors (more muted version)
-  '--tag-background-secondary-default': '#32a8c2',
-  '--tag-background-secondary-active': '#28869c',
-  '--tag-background-secondary-hover': '#54bad6',
-  
-  // Accent tag colors (more muted version)
-  '--tag-background-accent-default': '#cc6699',
-  '--tag-background-accent-active': '#a3527a',
-  '--tag-background-accent-hover': '#d68cb4',
-  
-  // Muted tag colors (using existing text-muted with variations)
-  '--tag-background-muted-default': 'var(--text-muted)',
-  '--tag-background-muted-active': '#8a8fa0',
-  '--tag-background-muted-hover': '#d1d4dd',
-  
-  // Card tag colors (preserving the good card color)
-  '--tag-background-card-default': 'var(--card)',
-  '--tag-background-card-active': '#20263d',
-  '--tag-background-card-hover': '#2a3047',
-};
-
-
-// Define size mappings
 const sizeStyles = {
   xs: 'clamp(0.6rem, 0.8vw, 0.7rem)',
   sm: 'clamp(0.7rem, 0.9vw, 0.8rem)',
@@ -38,7 +8,6 @@ const sizeStyles = {
   lg: 'clamp(0.9rem, 1.2vw, 1rem)',
 };
 
-// Define padding mappings
 const paddingStyles = {
   xs: 'var(--spacing-xs) var(--spacing-s)',
   sm: 'var(--spacing-s) var(--spacing-m)',
@@ -46,7 +15,6 @@ const paddingStyles = {
   lg: 'var(--spacing-l) var(--spacing-xl)',
 };
 
-// Define border radius mappings
 const borderRadiusStyles = {
   none: '0',
   sm: 'var(--spacing-xs)',
@@ -85,8 +53,7 @@ export const StyledTag = styled.div<StyledTagProps>`
   background-color: ${({ $variant, $active }) =>
     $active
       ? `var(--tag-background-${$variant}-active)`
-      : `var(--tag-background-${$variant}-default)`
-  };
+      : `var(--tag-background-${$variant}-default)`};
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   border: 1px solid transparent;

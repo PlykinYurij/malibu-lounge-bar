@@ -1,7 +1,11 @@
 export const MenuIcon = () => {
-    return <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--text-muted)">
-        <path fill-rule="evenodd"
-              d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-              clip-rule="evenodd"/>
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--text-muted)">
+      <path
+        fill-rule="evenodd"
+        d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+        clip-rule="evenodd"
+      />
     </svg>
-}
+  );
+};

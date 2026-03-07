@@ -1,5 +1,5 @@
 import { styled } from '@linaria/react';
-import {TextFontFamily, TextProps} from './types';
+import type { TextFontFamily, TextProps } from './types';
 
 // Маппинг размеров текста
 export const sizeStylesText = {
@@ -37,16 +37,16 @@ export const colorStylesText = {
 
 export const textFontFamilyText: Record<TextFontFamily, string> = {
   main: 'MalibuFontMain',
-  description: 'MalibuFontDescription'
-}
+  description: 'MalibuFontDescription',
+};
 
 export const StyledText = styled.p<TextProps>`
-  font-size: ${({ size = 'md' }) => sizeStylesText[size!]};
-  font-weight: ${({ bold = 'normal' }) => weightStylesText[bold!]};
-  font-style: ${({ italic = false }) => italic ? 'italic' : 'normal'};
-  color: ${({ color = 'primary' }) => colorStylesText[color!]};
+  font-size: ${({ size = 'md' }) => sizeStylesText[size]};
+  font-weight: ${({ bold = 'normal' }) => weightStylesText[bold]};
+  font-style: ${({ italic = false }) => (italic ? 'italic' : 'normal')};
+  color: ${({ color = 'primary' }) => colorStylesText[color]};
   text-align: ${({ textAlight = 'start' }) => textAlight};
-  font-family: ${({fontFamily = 'main'}) => textFontFamilyText[fontFamily]};
+  font-family: ${({ fontFamily = 'main' }) => textFontFamilyText[fontFamily]};
   white-space: pre-line;
   padding: 0;
 `;

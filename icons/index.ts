@@ -1,3 +1,3 @@
-export * from './IconVK'
-export * from './MenuIcon'
-export * from './CloseIcon'
+export * from './CloseIcon';
+export * from './IconVK';
+export * from './MenuIcon';
