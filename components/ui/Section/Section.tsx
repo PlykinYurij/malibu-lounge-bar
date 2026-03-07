@@ -1,28 +1,37 @@
 'use client';
-import {SectionStyled} from './Section.styles'
-import {Text} from '../Text'
-import {ComponentProps, ReactNode} from "react";
-import {Title} from "@ui/Title";
-import {Flex} from "@ui/Flex";
+import { Flex } from '@ui/Flex';
+import { Title } from '@ui/Title';
+import type { ComponentProps, ReactNode } from 'react';
+import { SectionStyled } from './Section.styles';
 
 interface SectionProps {
-    id: string;
-    title?: string;
-    children: ReactNode;
+  id: string;
+  title?: string;
+  children: ReactNode;
 }
 
-export const Section = ({id, title, children, ...rest}: SectionProps & ComponentProps<'section'>) => {
+export const Section = ({
+  id,
+  title,
+  children,
+  ...rest
+}: SectionProps & ComponentProps<'section'>) => {
+  return (
+    <SectionStyled id={id} {...rest}>
+      {title && (
+        <Flex justifyContent={'center'}>
+          <Title
+            textAlight={'center'}
+            size="sm"
+            bold={'normal'}
+            color="lux-red"
+          >
+            {title.toUpperCase()}
+          </Title>
+        </Flex>
+      )}
 
-    return (
-        <SectionStyled id={id} {...rest}>
-            {title && <Flex justifyContent={"center"}><Title
-                textAlight={"center"}
-                size='sm'
-                bold={'normal'}
-                color='lux-red'
-            >{title.toUpperCase()}</Title></Flex>}
-
-            {children}
-        </SectionStyled>
-    );
+      {children}
+    </SectionStyled>
+  );
 };

@@ -1,1 +1,1 @@
-export * from './useLockBodyScroll'
+export * from './useLockBodyScroll';

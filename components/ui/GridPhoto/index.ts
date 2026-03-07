@@ -1,1 +1,1 @@
-export * from './GridPhoto'
+export * from './GridPhoto';

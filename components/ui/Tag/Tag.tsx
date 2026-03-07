@@ -2,18 +2,18 @@
 
 import { Text } from '../Text';
 import { StyledTag } from './Tag.styles';
-import { TagProps } from './types';
+import type { TagProps } from './types';
 
-export const Tag = ({ 
-  children, 
-  variant = 'primary', 
-  size = 'md', 
-  borderRadius = 'md', 
-  isActive = false, 
-  onClick, 
+export const Tag = ({
+  children,
+  variant = 'primary',
+  size = 'md',
+  borderRadius = 'md',
+  isActive = false,
+  onClick,
   className,
   textColor = 'white',
-  ...rest 
+  ...rest
 }: TagProps) => {
   return (
     <StyledTag

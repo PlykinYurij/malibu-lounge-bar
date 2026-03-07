@@ -1,13 +1,13 @@
-import {styled} from '@linaria/react';
-import {Flex} from "@ui";
+import { styled } from '@linaria/react';
+import { Flex } from '@ui';
 
 export const StyledNav = styled.nav<{ isOpen: boolean }>`
     position: fixed;
     width: 100%;
     top: 0;
-    opacity: ${({isOpen}) => isOpen ? 0.95 : 0.8};
+    opacity: ${({ isOpen }) => (isOpen ? 0.95 : 0.8)};
     z-index: 100;
-    min-height: ${({isOpen}) => isOpen ? '100dvh' : '20px'};
+    min-height: ${({ isOpen }) => (isOpen ? '100dvh' : '20px')};
     background: var(--bg);
     padding: var(--spacing-m) var(--spacing-m);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -52,4 +52,4 @@ export const LogoContainer = styled.div`
 
 export const LogoWrapper = styled(Flex)`
     cursor: pointer;
-`
+`;

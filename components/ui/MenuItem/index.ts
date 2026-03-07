@@ -1,2 +1,2 @@
-export * from './MenuItem.styles'
-export * from './MenuItem'
+export * from './MenuItem';
+export * from './MenuItem.styles';

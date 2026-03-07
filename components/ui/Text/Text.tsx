@@ -1,8 +1,16 @@
-import React from 'react';
 import { StyledText } from './Text.styles';
-import { TextProps } from './types';
+import type { TextProps } from './types';
 
-export const Text = ({ children, size, bold, italic, color, textAlight, fontFamily, ...rest }: TextProps) => {
+export const Text = ({
+  children,
+  size,
+  bold,
+  italic,
+  color,
+  textAlight,
+  fontFamily,
+  ...rest
+}: TextProps) => {
   return (
     <StyledText
       size={size}

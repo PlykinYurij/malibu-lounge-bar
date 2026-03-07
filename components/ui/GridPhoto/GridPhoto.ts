@@ -1,4 +1,4 @@
-import {styled} from "@linaria/react";
+import { styled } from '@linaria/react';
 
 export const PhotoGrid = styled.div`
     display: grid;

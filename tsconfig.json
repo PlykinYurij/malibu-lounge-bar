@@ -27,7 +27,7 @@
       "@ui/*": ["./components/ui/*"],
       "@ui": ["./components/ui"],
       "@icons": ["./icons"],
-      "@data/*": ["./data/*"],
+      "@data/*": ["./data/*"]
     }
   },
   "include": [

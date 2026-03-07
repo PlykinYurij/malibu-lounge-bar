@@ -1,1 +1,1 @@
-export * from "./VipZone"
+export * from './VipZone';

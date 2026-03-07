@@ -1,6 +1,11 @@
-'use client'
+'use client';
 import { useTranslation } from 'react-i18next';
-import { HeroContainer, HeroContent, HeroTitle, HeroSubtitle } from './Hero.styles';
+import {
+  HeroContainer,
+  HeroContent,
+  HeroSubtitle,
+  HeroTitle,
+} from './Hero.styles';
 
 export const Hero = () => {
   const { t } = useTranslation();

@@ -1,6 +1,5 @@
 const withLinary = require('next-with-linaria');
 
-const nextConfig = {
-};
+const nextConfig = {};
 
 module.exports = withLinary(nextConfig);

@@ -7,11 +7,9 @@
   --neon-blue: #3fdfff;
   --section-title: #ff80bf;
 
-
   /* Contact card */
   --card-border-color-default: #c7cbda;
   --card-border-radius: 5px;
-
 
   /* Spacing scale for responsive design */
   --spacing-xxs: clamp(1px, 0.5vw, 2px);
@@ -26,16 +24,16 @@
 }
 
 @font-face {
-  font-family: 'MalibuFontMain';
-  src: url('/fonts/malibu-font.woff2') format('woff2');
+  font-family: "MalibuFontMain";
+  src: url("/fonts/malibu-font.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'MalibuFontDescription';
-  src: url('/fonts/malibu-description.ttf') format('truetype');
+  font-family: "MalibuFontDescription";
+  src: url("/fonts/malibu-description.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -44,12 +42,11 @@
 body {
   background: var(--bg);
   color: var(--text-main);
-  font-family: 'MalibuFontMain';
+  font-family: "MalibuFontMain", Arial, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin: 0;
 }
-
 
 nav.container-fluid {
   position: sticky;
@@ -60,7 +57,7 @@ nav.container-fluid {
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-s) var(--spacing-m);
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav .nav-links {
@@ -73,7 +70,7 @@ nav a,
   color: var(--text-main);
   margin-left: var(--spacing-m);
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   background: none;
   border: none;
   font-size: inherit;
@@ -104,7 +101,8 @@ nav a:hover,
 }
 
 /* Sections */
-section, .menu-category {
+section,
+.menu-category {
   margin: var(--spacing-xxxxl) 0;
 }
 
@@ -113,10 +111,10 @@ section, .menu-category {
 }
 
 .menu-title {
-  font-family: 'Lucida Handwriting', cursive, sans-serif;
+  font-family: "Lucida Handwriting", cursive, sans-serif;
   font-size: 2rem;
   color: var(--section-title);
-  text-shadow: 0 0 10px rgba(255,128,191,.7);
+  text-shadow: 0 0 10px rgba(255, 128, 191, 0.7);
   margin-bottom: var(--spacing-l);
 }
 
@@ -130,14 +128,16 @@ section, .menu-category {
   background: var(--card);
   padding: var(--spacing-xl);
   border-radius: 18px;
-  box-shadow: 0 0 40px rgba(0,0,0,.5);
-  transition: transform .4s, box-shadow .4s;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.4s,
+    box-shadow 0.4s;
   text-align: center;
 }
 
 .menu-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 60px rgba(255,78,205,.2);
+  box-shadow: 0 0 60px rgba(255, 78, 205, 0.2);
 }
 
 .menu-item img {
@@ -166,7 +166,7 @@ section, .menu-category {
 }
 
 footer {
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: var(--spacing-xl) 0;
   text-align: center;
   color: var(--text-muted);
