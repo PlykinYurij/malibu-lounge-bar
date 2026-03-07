@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx @biomejs/biome check --write",
+    "lint": "npx @biomejs/biome check --write --error-on-warnings",
     "types": "tsc",
     "prepare": "husky"
   },

@@ -15,7 +15,6 @@ import { useTranslation } from 'react-i18next';
 const photos = Array.from({ length: 3 }, (_, i) => `/vip-${i + 1}.jpg`);
 
 export const VipZone = () => {
-  const sdf = 1;
   const { t } = useTranslation();
 
   return (
