@@ -7,6 +7,9 @@ export const SectionStyled = styled.section`
     padding: var(--spacing-xxxl) var(--spacing-xl);
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 `;
 
 export const SectionContainerContent = styled.aside`

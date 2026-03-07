@@ -45,6 +45,12 @@ export const MENU: FoodItem[] = [
     variants: [{ price: 250 }],
   },
   {
+    id: '28',
+    name: 'Масик',
+    category: 'burgers',
+    variants: [{ price: 480 }],
+  },
+  {
     id: '8',
     name: 'ДаблМасик',
     category: 'burgers',
@@ -63,12 +69,6 @@ export const MENU: FoodItem[] = [
     variants: [{ price: 120 }],
   },
   {
-    id: '11',
-    name: 'Крылышки Буффало',
-    category: 'snacks',
-    variants: [{ price: 350 }],
-  },
-  {
     id: '12',
     name: 'Моцарелла в панировке',
     category: 'snacks',
@@ -79,12 +79,6 @@ export const MENU: FoodItem[] = [
     name: 'Монетки сырные с халопеньо',
     category: 'snacks',
     variants: [{ price: 350 }],
-  },
-  {
-    id: '14',
-    name: 'Блинчики с ветчиной и сыром',
-    category: 'snacks',
-    variants: [{ price: 300 }],
   },
   {
     id: '15',
@@ -99,29 +93,24 @@ export const MENU: FoodItem[] = [
     variants: [{ price: 200 }],
   },
   {
-    id: '17',
-    name: 'Луковые кольца в панировке',
-    category: 'snacks',
-    variants: [{ price: 200 }],
-  },
-  {
     id: '18',
     name: 'Кольца кальмара в панировке',
     category: 'snacks',
     variants: [{ price: 300 }],
   },
   {
-    id: '19',
-    name: 'Крылышки в панировке',
+    id: '25',
+    name: 'Пита с курицей',
     category: 'snacks',
-    variants: [{ price: 300 }],
+    variants: [{ price: 280 }],
   },
   {
-    id: '20',
-    name: 'Креветки на гриле',
+    id: '34',
+    name: 'Пита с креветками',
     category: 'snacks',
-    variants: [{ price: 250 }],
+    variants: [{ price: 400 }],
   },
+
   {
     id: '21',
     name: 'Арахис жареный',
@@ -134,23 +123,12 @@ export const MENU: FoodItem[] = [
     category: 'snacks',
     variants: [{ price: 130 }],
   },
-  {
-    id: '23',
-    name: 'Фундук жареный',
-    category: 'snacks',
-    variants: [{ price: 100 }],
-  },
+
   {
     id: '24',
     name: 'Фисташки',
     category: 'snacks',
     variants: [{ volume: '50', unit: 'гр', price: 100 }],
-  },
-  {
-    id: '25',
-    name: 'Пита с курицей',
-    category: 'burgers',
-    variants: [{ price: 280 }],
   },
   {
     id: '26',
@@ -164,12 +142,7 @@ export const MENU: FoodItem[] = [
     category: 'pastes',
     variants: [{ price: 400 }],
   },
-  {
-    id: '28',
-    name: 'Чизбургер',
-    category: 'burgers',
-    variants: [{ price: 480 }],
-  },
+
   {
     id: '29',
     name: 'Сырная тарелка',
@@ -200,12 +173,7 @@ export const MENU: FoodItem[] = [
     category: 'burgers',
     variants: [{ price: 750 }],
   },
-  {
-    id: '34',
-    name: 'Пита с креветками',
-    category: 'burgers',
-    variants: [{ price: 400 }],
-  },
+
   {
     id: '35',
     name: 'Паста "Том Ям"',
@@ -263,7 +231,7 @@ export const MENU: FoodItem[] = [
   },
   {
     id: '6',
-    name: 'Торт малина фисташка',
+    name: 'Торт малина-фисташка',
     category: 'desserts',
     variants: [{ price: 250 }],
   },
@@ -275,53 +243,109 @@ export const MENU: FoodItem[] = [
   },
   /** */
 
-  /** Tea */
+  /** Классический чай */
+  {
+    id: '1',
+    name: 'Кенийский черный чай',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '2',
+    name: 'Зеленый Те Гуань Инь',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '3',
+    name: 'Жасминовый',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '4',
+    name: 'Молочный улун "Сердце дракона"',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '5',
+    name: 'Эрл грей',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '6',
+    name: 'Гречишный',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '7',
+    name: 'Пуэр Ча',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '8',
+    name: 'Шу Пуэр 4 летний',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+  {
+    id: '9',
+    name: 'Каркаде',
+    category: 'tea',
+    variants: [{ volume: '0.9', unit: 'л', price: 250 }],
+  },
+
+  /** Фирменный чай */
   {
     id: '1',
     name: 'Клюквенно-ванильный',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Черный чай, клюква пюре, сироп ваниль',
   },
   {
     id: '2',
     name: 'Тропический',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Зеленый чай, апельсин, мята, сироп маракуйя',
   },
   {
     id: '3',
     name: 'Сливовый',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Черный чай, слива пюре, сахарный сироп',
   },
   {
     id: '4',
     name: 'Цитрусовый микс',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Чай на выбор, апельсин, лимон, грейпфрут',
   },
   {
     id: '5',
     name: 'Облепиховый',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Чай на выбор, облепиха пюре, лимон, мята мед',
   },
   {
     id: '6',
     name: 'Имбирный',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Чай на выбор, имбирь пюре, лимон, мята мед',
   },
   {
     id: '7',
     name: 'Ягодный',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients:
       'Чай на выбор, малина, вишня, черная смородина, листья смородины',
@@ -329,7 +353,7 @@ export const MENU: FoodItem[] = [
   {
     id: '8',
     name: 'Массала',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients:
       'Черный чай, молоко, черный перец, кардамон, корица, имбирь, мускатный орех, гвоздика, бадьян',
@@ -337,14 +361,14 @@ export const MENU: FoodItem[] = [
   {
     id: '9',
     name: 'Сакура',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Черный чай, лепистки роз, клубника',
   },
   {
     id: '10',
     name: 'Мароканский',
-    category: 'tea',
+    category: 'signatureTea',
     variants: [{ volume: '0.9', unit: 'л', price: 400 }],
     ingredients: 'Зеленый чай, мята, лайм, бадьян, корица, гвоздика',
   },
@@ -384,7 +408,7 @@ export const MENU: FoodItem[] = [
     id: '6',
     name: 'Бамбл карамельный',
     category: 'coffee',
-    variants: [{ price: 280 }],
+    variants: [{ price: 320 }],
   },
 
   /** Барная карта*/
@@ -400,7 +424,7 @@ export const MENU: FoodItem[] = [
     id: '2',
     name: 'Смузи',
     category: 'drinks',
-    variants: [{ volume: '300', unit: 'мл', price: 290 }],
+    variants: [{ volume: '300', unit: 'мл', price: 310 }],
     description: 'А, ты из этих? Да, без добавления сиропов',
     kind: ['Банан, клубника', 'Яблоко, киви', 'Малина, персик'],
   },
@@ -412,9 +436,9 @@ export const MENU: FoodItem[] = [
     description: 'Лимонады отличаются от коктейлей. Чем? Спроси у официанта',
     kind: [
       'Тропики',
-      'Грейпфрут, малина',
-      'Киви, яблоко',
-      'Лаванда, черная смородига',
+      'Грейпфрут-малина',
+      'Киви-яблоко',
+      'Лаванда-черная смородига',
     ],
   },
   {
@@ -423,7 +447,7 @@ export const MENU: FoodItem[] = [
     category: 'drinks',
     variants: [{ volume: '400', unit: 'мл', price: 310 }],
     description: 'Без алкоголя, не прячем, под баром нет, по тихой не нальем',
-    kind: ['Мохито (Classic, Orange, Strawberry)', 'Пина колада', 'Санрайз'],
+    kind: ['Мохито (Classic, Orange, Strawberry)', 'Пина-колада', 'Санрайз'],
   },
 
   /** Акоголь*/
@@ -443,6 +467,18 @@ export const VIP_ZONE: Pick<FoodItem, 'id' | 'name' | 'variants'>[] = [
 
 export const OPENING_HOURS: { day: string; time: string }[] = [
   { day: 'Пн - Чт', time: '17:00-01:00' },
-  { day: 'Пятница', time: '17:00-03:00' },
-  { day: 'Сб - Вс', time: '17:00-01:00' },
+  { day: 'Пт-Сб', time: '17:00-03:00' },
+  { day: 'Вс', time: '17:00-01:00' },
+];
+
+export const RULES: { id: string; description: string }[] = [
+  { id: 'age', description: 'Вход строго 18+' },
+  {
+    id: 'alco',
+    description: 'Со своими пивными и безалкогольными напитками вход воспрещен',
+  },
+  {
+    id: 'time',
+    description: 'Кальян рассчитан на 1,5 часа покура на 4 человека',
+  },
 ];

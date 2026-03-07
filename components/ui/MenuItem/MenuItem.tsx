@@ -26,7 +26,7 @@ export const MenuItem: FC<Omit<FoodItem, 'category'>> = ({
           </Text>
         )}
         {ingredients && (
-          <Text size={'sm'} color={'muted'}>
+          <Text size={'sm'} color={'lux-red'}>
             {ingredients}
           </Text>
         )}

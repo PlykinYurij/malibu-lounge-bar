@@ -6,7 +6,7 @@ export type VariantItem = {
 
 export type Categories =
   | 'desserts'
-  | 'tea'
+  | 'signatureTea'
   | 'coffee'
   | 'drinks'
   | 'snacks'
@@ -14,6 +14,7 @@ export type Categories =
   | 'pastes'
   | 'burgers'
   | 'sauces'
+  | 'tea'
   | 'alcohol';
 
 export type FoodItem = {

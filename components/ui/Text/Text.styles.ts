@@ -49,4 +49,5 @@ export const StyledText = styled.p<TextProps>`
   font-family: ${({ fontFamily = 'main' }) => textFontFamilyText[fontFamily]};
   white-space: pre-line;
   padding: 0;
+  width: fit-content;
 `;
