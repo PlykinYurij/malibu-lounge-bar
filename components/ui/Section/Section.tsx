@@ -1,4 +1,3 @@
-'use client';
 import { Flex } from '@ui/Flex';
 import { Title } from '@ui/Title';
 import type { ComponentProps, ReactNode } from 'react';

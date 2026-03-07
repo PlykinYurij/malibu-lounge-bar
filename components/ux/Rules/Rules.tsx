@@ -1,4 +1,3 @@
-'use client';
 import {
   PhotoCard,
   PhotoGrid,
@@ -7,16 +6,16 @@ import {
   SectionContainerContent,
   Text,
 } from '@ui';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 
 const photos = Array.from({ length: 3 }, (_, i) => `/rule-${i + 1}.jpg`);
 
 export const Rules = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
-    <Section id={'rules'} title={t('sections:rules.title')}>
+    <Section id={'rules'} title={t('sections.rules.title')}>
       <SectionContainerContent>
-        <Text>{t('sections:rules.description')}</Text>
+        <Text>{t('sections.rules.description')}</Text>
         <PhotoGrid>
           {photos.map((photo, index) => (
             <PhotoCard

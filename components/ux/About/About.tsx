@@ -1,4 +1,3 @@
-'use client';
 import {
   PhotoCard,
   PhotoGrid,
@@ -7,23 +6,23 @@ import {
   SectionContainerContent,
   Text,
 } from '@ui';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import { AboutSection } from './About.styles';
 
 const photos = Array.from({ length: 3 }, (_, i) => `/photo-${i + 1}.jpg`);
 
 export const About = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <Section
       id="about"
-      title={t('sections:about.title')}
+      title={t('sections.about.title')}
       className={AboutSection}
     >
       <SectionContainerContent>
         <Text textAlight={'center'} fontFamily={'description'}>
-          {t('sections:about.description')}
+          {t('sections.about.description')}
         </Text>
         <PhotoGrid>
           {photos.map((photo, index) => (

@@ -1,5 +1,7 @@
 const withLinary = require('next-with-linaria');
+const createNextIntlPlugin = require('next-intl/plugin');
 
 const nextConfig = {};
+const withNextIntl = createNextIntlPlugin();
 
-module.exports = withLinary(nextConfig);
+module.exports = withNextIntl(withLinary(nextConfig));

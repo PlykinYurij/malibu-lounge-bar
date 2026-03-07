@@ -1,4 +1,3 @@
-'use client';
 import { VIP_ZONE } from '@data/menu';
 import {
   Flex,
@@ -10,15 +9,15 @@ import {
   SectionContainerContent,
   Text,
 } from '@ui';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 
 const photos = Array.from({ length: 3 }, (_, i) => `/vip-${i + 1}.jpg`);
 
 export const VipZone = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
-    <Section id="vipZone" title={t('sections:vipZone.title')}>
+    <Section id="vipZone" title={t('sections.vipZone.title')}>
       <SectionContainerContent>
         <PhotoGrid>
           {photos.map((photo, index) => (
@@ -37,7 +36,7 @@ export const VipZone = () => {
         </PhotoGrid>
         <Flex direction={'column'} gap={'xl'}>
           <Text size={'lg'} bold={'semibold'} color={'secondary'} italic>
-            {t('sections:vipZone.description')}
+            {t('sections.vipZone.description')}
           </Text>
           <Flex direction={'column'} gap={'m'}>
             {VIP_ZONE.map((item) => (
