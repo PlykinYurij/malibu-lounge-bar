@@ -45,7 +45,7 @@ export const Menu: FC = () => {
   const t = useTranslations();
 
   return (
-    <Section id="menu" title={t('sections.menu.title')}>
+    <Section id="menu" title={t('sections.menu.title')} isStyled>
       <Flex direction="column" gap="xl">
         {Object.entries(preparedMenu).map(([category, menuItems]) => (
           <div key={category}>

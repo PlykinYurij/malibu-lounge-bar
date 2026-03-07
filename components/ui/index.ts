@@ -4,6 +4,7 @@ export * from './GridPhoto';
 export * from './Link';
 export * from './MenuItem';
 export * from './Section';
+export * from './Styles';
 export * from './Tag';
 export * from './Text';
 export * from './Title';

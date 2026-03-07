@@ -35,7 +35,7 @@ export const VipZone = () => {
           ))}
         </PhotoGrid>
         <Flex direction={'column'} gap={'xl'}>
-          <Text size={'lg'} bold={'semibold'} color={'secondary'} italic>
+          <Text fontFamily={'description'} size={'xl'} textAlight={'center'}>
             {t('sections.vipZone.description')}
           </Text>
           <Flex direction={'column'} gap={'m'}>

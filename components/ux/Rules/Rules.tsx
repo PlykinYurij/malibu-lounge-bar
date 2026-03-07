@@ -1,22 +1,35 @@
-import {
-  PhotoCard,
-  PhotoGrid,
-  PhotoImage,
-  Section,
-  SectionContainerContent,
-  Text,
-} from '@ui';
+import { RULES } from '@data/menu';
+import { Age18, Alco, Hookah } from '@icons';
+import { Flex, Section, Text } from '@ui';
 import { useTranslations } from 'next-intl';
 
-const photos = Array.from({ length: 3 }, (_, i) => `/rule-${i + 1}.jpg`);
+const Icons: Record<string, () => React.JSX.Element> = {
+  alco: Alco,
+  age: Age18,
+  time: Hookah,
+};
 
 export const Rules = () => {
   const t = useTranslations();
   return (
-    <Section id={'rules'} title={t('sections.rules.title')}>
-      <SectionContainerContent>
-        <Text>{t('sections.rules.description')}</Text>
-        <PhotoGrid>
+    <Section id={'rules'} title={t('sections.rules.title')} isStyled>
+      <Flex
+        direction={'column'}
+        gap={'m'}
+        justifyContent={'center'}
+        alignItems={'center'}
+      >
+        {RULES.map(({ id, description }) => {
+          const Icon = Icons[id];
+          return (
+            <Flex key={id} gap={'m'} alignItems={'center'}>
+              {Icon && <Icon />}
+              <Text textAlight={'center'}>{description}</Text>
+            </Flex>
+          );
+        })}
+      </Flex>
+      {/*        <PhotoGrid>
           {photos.map((photo, index) => (
             <PhotoCard
               // biome-ignore lint/suspicious/noArrayIndexKey: static list
@@ -30,8 +43,7 @@ export const Rules = () => {
               />
             </PhotoCard>
           ))}
-        </PhotoGrid>
-      </SectionContainerContent>
+        </PhotoGrid>*/}
     </Section>
   );
 };

@@ -25,7 +25,7 @@ export const Contacts = () => {
 
       <Card title={t('sections.contacts.place')}>
         <Flex direction={'column'} gap={'m'}>
-          <Link href={'https://go.2gis.com/vBynG'} target={'_blank'}>
+          <Link href={'https://yandex.ru/maps/-/CPu0Q07p'} target={'_blank'}>
             <Text textAlight={'center'}>{t('sections.contacts.address')}</Text>
           </Link>
         </Flex>
