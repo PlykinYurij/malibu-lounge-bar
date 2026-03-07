@@ -1,7 +1,5 @@
-'use client';
-
-import '../i18n';
+import { NextIntlClientProvider } from 'next-intl';
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return <NextIntlClientProvider>{children}</NextIntlClientProvider>;
 }

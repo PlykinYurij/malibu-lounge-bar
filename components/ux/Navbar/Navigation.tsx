@@ -2,8 +2,8 @@
 import { useLockBodyScroll } from '@hooks';
 import { CloseIcon, MenuIcon } from '@icons';
 import { Flex, Link, Text } from '@ui';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   Logo,
   LogoContainer,
@@ -23,7 +23,7 @@ const NAV_LINKS = [
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useLockBodyScroll(isMenuOpen);
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -58,7 +58,7 @@ export const Navigation = () => {
         </LogoWrapper>
         <Flex gap="s" alignItems={'center'}>
           <Link href={'tel:+79277516618'} target={'_blank'}>
-            <Text textAlight={'center'}>{t('sections:contacts.phone')}</Text>
+            <Text textAlight={'center'}>{t('sections.contacts.phone')}</Text>
           </Link>
           <NavToggle isOpen={isMenuOpen} onClick={toggleMenu}>
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -69,7 +69,7 @@ export const Navigation = () => {
         <Flex alignItems={'center'} direction={'column'} gap={'m'}>
           {NAV_LINKS.map(({ id }) => (
             <NavButton key={id} onClick={() => scrollToSection(id)}>
-              <Text size={'xl'}>{t(`navbar:${id}`)}</Text>
+              <Text size={'xl'}>{t(`navbar.${id}`)}</Text>
             </NavButton>
           ))}
         </Flex>

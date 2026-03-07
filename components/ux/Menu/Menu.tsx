@@ -1,11 +1,9 @@
-'use client';
-
 import { MENU as menuData } from '@data/menu';
 import type { FoodItem } from '@data/types';
 import { styled } from '@linaria/react';
 import { Flex, MenuItem, Section, Text } from '@ui';
+import { useTranslations } from 'next-intl';
 import type { FC } from 'react';
-import { useTranslation } from 'react-i18next';
 
 const setRepeat = (count: number) => {
   if (count === 2) {
@@ -44,10 +42,10 @@ const preparedMenu = menuData.reduce(
 );
 
 export const Menu: FC = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
-    <Section id="menu" title={t('sections:menu.title')}>
+    <Section id="menu" title={t('sections.menu.title')}>
       <Flex direction="column" gap="xl">
         {Object.entries(preparedMenu).map(([category, menuItems]) => (
           <div key={category}>
@@ -56,7 +54,7 @@ export const Menu: FC = () => {
               style={{ marginBottom: 'var(--spacing-m)' }}
             >
               <Text size="xl" color="muted">
-                {t(`categories:${category}`)}
+                {t(`categories.${category}`)}
               </Text>
             </Flex>
 

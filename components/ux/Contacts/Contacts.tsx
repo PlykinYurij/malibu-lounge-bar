@@ -1,38 +1,37 @@
-'use client';
 import { OPENING_HOURS } from '@data/menu';
 import { IconVK } from '@icons';
 import { Card, Flex, Link, Section, Text } from '@ui';
+import { useTranslations } from 'next-intl';
 import { Fragment } from 'react';
-import { useTranslation } from 'react-i18next';
 import { ContactSectionStyled, OpeningHours } from './Contacts.styles';
 
 export const Contacts = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <Section id="contacts" className={ContactSectionStyled}>
-      <Card title={t('sections:contacts.title')}>
+      <Card title={t('sections.contacts.title')}>
         <Flex direction={'column'} gap={'m'}>
           <Link href={'tel:+79277516618'} target={'_blank'}>
-            <Text textAlight={'center'}>{t('sections:contacts.phone')}</Text>
+            <Text textAlight={'center'}>{t('sections.contacts.phone')}</Text>
           </Link>
           <Link href={'https://vk.com/malibu_tlt'} target={'_blank'}>
             <Flex gap={'s'}>
               <IconVK />
-              <Text textAlight={'center'}>{t('sections:contacts.vk')}</Text>
+              <Text textAlight={'center'}>{t('sections.contacts.vk')}</Text>
             </Flex>
           </Link>
         </Flex>
       </Card>
 
-      <Card title={t('sections:contacts.place')}>
+      <Card title={t('sections.contacts.place')}>
         <Flex direction={'column'} gap={'m'}>
           <Link href={'https://go.2gis.com/vBynG'} target={'_blank'}>
-            <Text textAlight={'center'}>{t('sections:contacts.address')}</Text>
+            <Text textAlight={'center'}>{t('sections.contacts.address')}</Text>
           </Link>
         </Flex>
       </Card>
 
-      <Card title={t('sections:contacts.openingHours')}>
+      <Card title={t('sections.contacts.openingHours')}>
         <OpeningHours>
           {OPENING_HOURS.map(({ day, time }) => (
             <Fragment key={day}>

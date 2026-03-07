@@ -1,5 +1,3 @@
-'use client';
-
 import { Text } from '../Text';
 import { StyledTag } from './Tag.styles';
 import type { TagProps } from './types';
