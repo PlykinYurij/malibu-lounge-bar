@@ -16,6 +16,7 @@ import {
 const NAV_LINKS = [
   { id: 'about' },
   { id: 'menu' },
+  { id: 'vipZone' },
   { id: 'rules' },
   { id: 'contacts' },
 ];
@@ -33,7 +34,15 @@ export const Navigation = () => {
     setIsMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      /** size navbar*/
+      const offset = 50;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -69,7 +78,9 @@ export const Navigation = () => {
         <Flex alignItems={'center'} direction={'column'} gap={'m'}>
           {NAV_LINKS.map(({ id }) => (
             <NavButton key={id} onClick={() => scrollToSection(id)}>
-              <Text size={'xl'}>{t(`navbar.${id}`)}</Text>
+              <Text size={'xl'} fontFamily={'description'}>
+                {t(`navbar.${id}`)}
+              </Text>
             </NavButton>
           ))}
         </Flex>

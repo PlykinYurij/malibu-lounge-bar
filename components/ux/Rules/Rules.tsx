@@ -15,7 +15,7 @@ export const Rules = () => {
     <Section id={'rules'} title={t('sections.rules.title')} isStyled>
       <Flex
         direction={'column'}
-        gap={'m'}
+        gap={'xl'}
         justifyContent={'center'}
         alignItems={'center'}
       >
@@ -29,21 +29,6 @@ export const Rules = () => {
           );
         })}
       </Flex>
-      {/*        <PhotoGrid>
-          {photos.map((photo, index) => (
-            <PhotoCard
-              // biome-ignore lint/suspicious/noArrayIndexKey: static list
-              key={index}
-              className={index === 0 ? 'horizontal' : undefined}
-            >
-              <PhotoImage
-                src={photo}
-                alt={`Malibu Lounge Bar photo ${index + 1}`}
-                loading={index < 3 ? 'eager' : 'lazy'}
-              />
-            </PhotoCard>
-          ))}
-        </PhotoGrid>*/}
     </Section>
   );
 };
