@@ -13,6 +13,6 @@ export const ContactSectionStyled = css`
 
 export const OpeningHours = styled.div`
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--spacing-xs);
+    grid-template-columns: 1fr auto;
+    gap: var(--spacing-m);
 `;

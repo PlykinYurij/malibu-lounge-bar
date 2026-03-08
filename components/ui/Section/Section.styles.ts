@@ -4,7 +4,7 @@ export const SectionStyled = styled.section`
     display: flex;
     flex-direction: column;
     gap: var(--spacing-l);
-    padding: var(--spacing-xxxl) var(--spacing-xl);
+    padding: var(--spacing-xxxxl) var(--spacing-xl);
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -21,5 +21,6 @@ export const SectionContainerContent = styled.aside`
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        gap: var(--spacing-xxxxl);
     }
 `;
