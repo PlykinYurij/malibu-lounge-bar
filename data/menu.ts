@@ -45,6 +45,18 @@ export const MENU: FoodItem[] = [
     variants: [{ price: 250 }],
   },
   {
+    id: '37',
+    name: 'Куриная грудка с салатом',
+    category: 'mainCourses',
+    variants: [{ price: 350, volume: '450', unit: 'гр' }],
+  },
+  {
+    id: '38',
+    name: 'Тёплый салат с баклажанами',
+    category: 'mainCourses',
+    variants: [{ price: 350 }],
+  },
+  {
     id: '28',
     name: 'Масик',
     category: 'burgers',

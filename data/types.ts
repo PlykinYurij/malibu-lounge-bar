@@ -12,6 +12,7 @@ export type Categories =
   | 'snacks'
   | 'hookahs'
   | 'pastes'
+  | 'mainCourses'
   | 'burgers'
   | 'sauces'
   | 'tea'
